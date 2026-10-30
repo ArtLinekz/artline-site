@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ArtLine_kz — дизайн-жоба, жөндеу және жиһаз, Алматы</title>
+<meta name="description" content="Алматыда дизайн-жоба, «под ключ» жөндеу және тапсырыспен жиһаз. 30.11.2026 дейін жөндеу мен жиһазды бірге тапсырсаңыз, дизайн-жоба тегін.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap&subset=cyrillic" rel="stylesheet">
+<style>
+:root{--bg:#F1ECE6;--ink:#2B2623;--accent:#8A6F58;--accent-d:#6F5846;--line:#C9B7A3;--card:#FAF7F3;--wa:#25D366;
+--serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;--sans:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;padding-bottom:84px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,7vw,4.6rem)}
+h2{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:18px}
+h3{font-size:1.5rem;margin-bottom:6px}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+section{padding:72px 0}
+p.lead{max-width:60ch;font-size:1.08rem}
+.btn{display:inline-block;border:1.5px solid var(--accent);border-radius:999px;padding:14px 28px;font:700 1rem var(--sans);text-decoration:none;cursor:pointer;transition:background .25s,transform .25s,color .25s}
+.btn-main{background:var(--accent);color:#fff}
+.btn-main:hover{background:var(--accent-d);transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{background:var(--accent);color:#fff}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.curve{display:block;width:100%;height:46px;color:var(--line)}
+/* header / hero */
+header{padding:22px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:1.6rem;font-weight:600;text-decoration:none}
+.logo svg{width:38px;height:38px}
+.hero{padding:40px 0 70px}
+.hero .lead{margin-top:20px}
+.facts{margin-top:26px;font-size:.95rem;border-top:1px solid var(--line);padding-top:16px;max-width:60ch}
+.tag{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 16px;font-size:.9rem;margin-bottom:22px}
+/* cards */
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:30px}
+.card{background:var(--card);border:1px solid #e6ddd3;border-radius:12px;padding:26px;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(43,38,35,.1)}
+.card p{font-size:.98rem}
+.num{font-family:var(--serif);font-size:2rem;color:var(--accent);line-height:1}
+/* promo */
+.promo{background:var(--ink);color:var(--bg)}
+.promo h2{color:#fff}
+.promo .card{background:#3a3430;border-color:#4a423c;color:var(--bg)}
+.promo ul{list-style:none;margin:20px 0}
+.promo li{padding:8px 0 8px 28px;position:relative}
+.promo li:before{content:"";position:absolute;left:0;top:18px;width:16px;height:2px;background:var(--line)}
+.timer{display:flex;gap:12px;margin:26px 0;flex-wrap:wrap}
+.timer div{background:#3a3430;border-radius:12px;padding:12px 18px;min-width:78px;text-align:center}
+.timer b{display:block;font:600 2rem var(--serif);color:#fff}
+.timer span{font-size:.8rem;color:var(--line)}
+.note{font-size:.92rem;opacity:.85}
+/* tables & calc */
+table{width:100%;border-collapse:collapse;margin-top:22px;background:var(--card);border-radius:12px;overflow:hidden}
+td,th{text-align:left;padding:13px 18px;border-bottom:1px solid #e6ddd3}
+th{font-weight:700}
+.two{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:860px){.two{grid-template-columns:1fr 1fr}}
+label{display:block;font-weight:500;margin:16px 0 6px}
+textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;background:#fff;font:inherit;color:var(--ink);resize:vertical}
+input[type=text],input[type=tel],input[type=number],select{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;background:#fff;font:inherit;color:var(--ink)}
+.chk{display:flex;gap:10px;align-items:flex-start;margin:10px 0;font-weight:400;cursor:pointer}
+.chk input{margin-top:6px;accent-color:var(--accent);width:18px;height:18px}
+.res{border-top:1px solid var(--line);margin-top:20px;padding-top:6px}
+.res div{display:flex;justify-content:space-between;gap:12px;padding:8px 0}
+.res .tot{font:700 1.15rem var(--sans);border-top:1px solid var(--line);margin-top:6px;padding-top:14px}
+.res .tot strong{font:600 1.9rem var(--serif);color:var(--accent)}
+.free{color:var(--accent);font-weight:700}
+.small{font-size:.88rem;opacity:.8;margin-top:12px}
+/* why */
+.why li{list-style:none;padding:14px 0 14px 34px;border-bottom:1px solid var(--line);position:relative}
+.why li:before{content:"";position:absolute;left:0;top:25px;width:20px;height:2px;background:var(--accent)}
+/* wa big */
+.wa-big{display:flex;align-items:center;justify-content:center;gap:12px;background:var(--wa);color:#0b2e17;border-radius:16px;padding:22px 18px;font:700 1.35rem var(--sans);text-decoration:none;margin-top:22px;transition:transform .25s,box-shadow .25s}
+.wa-big:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(37,211,102,.35)}
+.wa-big svg,.wa-fix svg{width:30px;height:30px;fill:currentColor;flex:none}
+.wa-fix{position:fixed;left:14px;right:14px;bottom:14px;z-index:20;display:flex;align-items:center;justify-content:center;gap:10px;background:var(--wa);color:#0b2e17;border-radius:999px;padding:14px;font:700 1.05rem var(--sans);text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+@media(min-width:760px){.wa-fix{left:auto;right:22px;width:auto;padding:14px 26px}}
+.ok{display:none;margin-top:14px;padding:14px;border-radius:10px;background:#eaf5ec;color:#1d5a2e}
+details{background:var(--card);border:1px solid #e6ddd3;border-radius:12px;padding:16px 22px;margin-top:12px}
+summary{font-weight:700;cursor:pointer}
+details p{margin-top:10px}
+footer{padding:36px 0;text-align:center;font-size:.92rem;border-top:1px solid var(--line)}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.js .rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header>
+<div class="wrap">
+<a class="logo" href="#top" aria-label="ArtLine_kz">
+<svg viewBox="0 0 60 60" fill="none" aria-hidden="true"><path d="M8 54 28 6l8 18" stroke="#2B2623" stroke-width="3"/><path d="M42 14v38h14" stroke="#2B2623" stroke-width="3"/><path d="M12 40c10-14 24-12 30 0s8 12 14 12" stroke="#C9B7A3" stroke-width="3" stroke-linecap="round"/></svg>
+ArtLine_kz</a>
+<a class="btn btn-line" href="tel:+77066106272">Қоңырау шалу</a>
+</div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="wrap">
+<span class="tag rv">Алматы · акция 30.11.2026 дейін</span>
+<h1 class="rv">Жөндеу мен жиһазды алсаңыз, дизайн-жоба тегін</h1>
+<p class="lead rv">Алматыда дизайн-жоба, «под ключ» жөндеу және тапсырыспен жиһаз. Бір команда, бір келісімшарт.</p>
+<div class="btns rv">
+<a class="btn btn-main" href="#forma">Тегін өлшем мен консультацияға жазылу</a>
+<a class="btn btn-line" href="#calc">Құнын есептеу</a>
+</div>
+<p class="facts rv">Ремонтта 15 жыл тәжірибе · өз цех · келісімшарт · кезеңдер бойынша есеп</p>
+</div>
+</section>
+
+<svg class="curve" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30C250 0 450 46 700 24S1050 6 1200 22" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+
+<section>
+<div class="wrap">
+<h2 class="rv">Жобасыз жөндеу қымбатқа түседі</h2>
+<p class="lead rv">Жоспар болмаса, мынадай жағдайлар кездеседі:</p>
+<div class="grid">
+<div class="card rv"><h3>Бюджет өседі</h3><p>Жұмыс басталған соң түзетулер шығып, қосымша шығын пайда болады.</p></div>
+<div class="card rv"><h3>Мерзім созылады</h3><p>Қателерді қайта жасауға уақыт кетеді.</p></div>
+<div class="card rv"><h3>Сантехника орнында емес</h3><p>Жоспарсыз құбырлар мен розеткалар қолайсыз жерге түседі.</p></div>
+<div class="card rv"><h3>Жиһаз сыймайды</h3><p>Өлшем алдын ала есептелмесе, шкаф пен ас үй орнына түспей қалады.</p></div>
+<div class="card rv"><h3>Прораб жоғалады</h3><p>Келісімшарт пен есеп болмаса, сұрайтын адам табылмайды.</p></div>
+</div>
+<p class="lead rv" style="margin-top:24px"><b>Дизайн-жоба осының бәрін жөндеу басталмай тұрып шешеді.</b></p>
+</div>
+</section>
+
+<section style="padding-top:0">
+<div class="wrap">
+<h2 class="rv">Жоспардан бастап кілт тапсырғанға дейін, бір қолда</h2>
+<div class="grid">
+<div class="card rv"><div class="num">1</div><h3>Дизайн-жоба</h3><p>Жөндеуді қағаз жүзінде бастан-аяқ шешіп аламыз.</p></div>
+<div class="card rv"><div class="num">2</div><h3>«Под ключ» жөндеу</h3><p>Жобадағыдай жасаймыз.</p></div>
+<div class="card rv"><div class="num">3</div><h3>Жиһаз</h3><p>Өз цехымызда өлшемге дәл жасаймыз.</p></div>
+</div>
+<p class="lead rv" style="margin-top:26px">Бәрі бір келісімшартпен жүреді, сондықтан кімге жүгінетініңіз әрқашан белгілі.</p>
+</div>
+</section>
+
+<section class="promo" id="aksiya">
+<div class="wrap">
+<h2 class="rv">30.11.2026 дейін: дизайн-жоба сыйға</h2>
+<p class="rv">«Под ключ» жөндеу мен жиһазды бізден бірге тапсырсаңыз:</p>
+<ul class="rv">
+<li>дизайн-жоба <b>тегін</b>;</li>
+<li>ас үй гарнитурының жоғарғы шкафына <b>сушилка</b> сыйға;</li>
+<li>кіреберіске ұсақ заттарға арналған <b>сөре</b> сыйға.</li>
+</ul>
+<div class="timer rv" id="timer" aria-live="off">
+<div><b id="td">0</b><span>күн</span></div><div><b id="th">0</b><span>сағат</span></div><div><b id="tm">0</b><span>минут</span></div><div><b id="ts">0</b><span>секунд</span></div>
+</div>
+<p class="note rv">Сыйлықтар ас үй мен кіреберіс жиһазына ғана беріледі. Мысалы, 60 м² пәтерде дизайн-жобаға кететін 600 000 тг үнемделеді.</p>
+<div class="btns rv"><a class="btn btn-main" href="#forma">Акцияға қатысу</a></div>
+</div>
+</section>
+
+<section id="calc">
+<div class="wrap">
+<h2 class="rv">Құнын өзіңіз есептеңіз</h2>
+<p class="lead rv">Ауданды енгізіп, жөндеу класын таңдаңыз.</p>
+<div class="two" style="margin-top:20px">
+<div class="rv">
+<table>
+<tr><th>Класс</th><th>Жөндеу, 1 м²</th></tr>
+<tr><td>Эконом</td><td>47 990 тг</td></tr>
+<tr><td>Комфорт</td><td>69 000 тг</td></tr>
+<tr><td>Премиум</td><td>89 000 тг</td></tr>
+</table>
+<p class="small"><b>Дизайн-жоба</b> (акцияға қатыспасаңыз): 50 м²-ге дейін 12 000 тг/м², 80 м²-ге дейін 10 000 тг/м², одан үлкен болса 8 000 тг/м². Тариф бүкіл ауданға қолданылады.</p>
+<p class="small"><b>Жиһаз:</b> бағасы үйдің өлшеміне және материалға байланысты, сондықтан өлшемнен кейін нақты есептейміз.</p>
+</div>
+<div class="card rv">
+<label for="area">Аудан, м²</label>
+<input type="number" id="area" min="10" max="1000" value="60" inputmode="decimal">
+<label for="cls">Жөндеу класы</label>
+<select id="cls">
+<option value="47990">Эконом — 47 990 тг/м²</option>
+<option value="69000" selected>Комфорт — 69 000 тг/м²</option>
+<option value="89000">Премиум — 89 000 тг/м²</option>
+</select>
+<label style="margin-top:20px">Қандай жиһаз керек? (міндетті емес)</label>
+<label class="chk"><input type="checkbox" class="fur" data-n="Ас үй гарнитурі"> Ас үй гарнитурі</label>
+<label class="chk"><input type="checkbox" class="fur" data-n="Кіреберіс"> Кіреберіс</label>
+<label class="chk"><input type="checkbox" class="fur" data-n="Ұйықтайтын бөлме шкафы"> Ұйықтайтын бөлме шкафы</label>
+<label class="chk"><input type="checkbox" class="fur" data-n="Гардероб"> Гардероб</label>
+<label for="own">Басқа жиһаз немесе өз тілегіңіз</label>
+<textarea id="own" rows="3" maxlength="300" placeholder="Мысалы: балалар бөлмесіне төсек пен үстел, жұмыс орны, ванна тумбасы"></textarea>
+<div class="res">
+<div><span>Жөндеу</span><span id="rRep">—</span></div>
+<div><span>Дизайн-жоба</span><span id="rDes">—</span></div>
+<div><span>Жиһаз</span><span id="rFur">—</span></div>
+<div class="tot"><span>Жөндеу + дизайн шамамен</span><strong id="rTot">—</strong></div>
+</div>
+<p class="small" id="rNote"></p>
+<div class="btns"><a class="btn btn-main" href="#forma">Осы есеппен өтінім қалдыру</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding-top:0">
+<div class="wrap">
+<h2 class="rv">Уәде емес, келісімшарт</h2>
+<ul class="why rv">
+<li>Ремонтта <b>15 жыл</b> тәжірибе. Дизайнда 3 жыл, жиһазда 3 жыл.</li>
+<li>Объектіні келісімшарттағы мерзімде тапсырамыз.</li>
+<li>Әр жұмыс кезеңінен кейін есеп береміз.</li>
+<li>Жиһазды өз цехымызда жасаймыз.</li>
+</ul>
+</div>
+</section>
+
+<section style="padding-top:0">
+<div class="wrap">
+<h2 class="rv">Біздің жұмыстар</h2>
+<p class="lead rv">Дизайннан, жөндеуден және жиһаздан орындалған жобалардың фотосын көріңіз. Жаңалықтар мен жаңа жобалар Instagram-да: <b>@artline_kz_</b></p>
+<!-- ФОТО: жобалардың суреттерін осы жерге қойыңыз, мысалы: <div class="grid"><div class="card"><img src="foto1.jpg" alt="Ас үй"></div></div> -->
+<div class="btns rv"><a class="btn btn-main" href="https://www.instagram.com/artline_kz_/" target="_blank" rel="noopener">Жұмыстарды Instagram-да көру</a></div>
+</div>
+</section>
+
+<section id="forma" style="background:var(--card)">
+<div class="wrap two">
+<div class="rv">
+<h2>Тегін өлшем мен консультацияға жазылыңыз</h2>
+<p class="lead">Аты-жөніңіз бен телефоныңызды қалдырыңыз. Сізбен байланысып, өлшемге келетін уақытты келісеміз.</p>
+<a class="wa-big" href="https://wa.me/77066106272?text=Сәлеметсіз%20бе!%20Тегін%20өлшем%20мен%20консультацияға%20жазылғым%20келеді." target="_blank" rel="noopener">
+<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3zm0 2.4a10.6 10.6 0 1 1-5.4 19.7l-.4-.2-3.8 1.2 1.2-3.7-.3-.4A10.6 10.6 0 0 1 16 5.4zm-4 5.3c-.3 0-.7.1-1 .5-.4.4-1.300 1.300-1.300 3.100s1.300 3.600 1.500 3.800c.2.300 2.600 4.100 6.400 5.600 3.100 1.200 3.800.9 4.500.9.700-.1 2.200-.9 2.500-1.800.3-.9.3-1.600.2-1.800-.1-.2-.4-.3-.8-.5s-2.200-1.100-2.500-1.200c-.3-.1-.6-.2-.8.200-.2.300-.9 1.200-1.100 1.400-.2.200-.4.300-.8.100-.4-.2-1.600-.6-3-1.900-1.100-1-1.900-2.200-2.100-2.600-.2-.4 0-.6.200-.8l.6-.7c.2-.2.200-.4.400-.6.100-.3.100-.5 0-.7l-1.100-2.700c-.3-.7-.6-.6-.8-.6z"/></svg>
+WhatsApp-қа жазу</a>
+<p class="small">+7 706 610 6272</p>
+</div>
+<form class="card rv" id="form" novalidate>
+<p class="small" id="fsum" style="margin:0 0 4px"></p>
+<input type="text" id="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+<label for="fn">Аты-жөніңіз</label>
+<input type="text" id="fn" name="name" autocomplete="name" required>
+<label for="fp">Телефон</label>
+<input type="tel" id="fp" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required>
+<div class="btns"><button class="btn btn-main" type="submit">Өтінім жіберу</button></div>
+<p class="small">Түймені басқанда WhatsApp ашылады, өтініміңіз дайын мәтінмен бізге жіберіледі. Нөміріңіз тек байланысу үшін қолданылады. WhatsApp жоқ болса, <a href="tel:+77066106272">қоңырау шалыңыз</a>.</p>
+<div class="ok" id="ok" role="status"></div>
+</form>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<h2 class="rv">Жиі қойылатын сұрақтар</h2>
+<details class="rv"><summary>Дизайн-жоба не үшін керек?</summary><p>Жоба болса, жөндеу басталмай тұрып барлығы шешіледі: сантехника, жиһаз орны, өлшемдер. Қателер мен қосымша шығындар азаяды.</p></details>
+<details class="rv"><summary>Дизайн-жоба қашан тегін болады?</summary><p>30.11.2026 дейін «под ключ» жөндеу мен жиһазды бізден бірге тапсырсаңыз. Басқа жағдайда жоба ақылы, бағасы ауданға байланысты.</p></details>
+<details class="rv"><summary>Сыйлық қандай жиһазға беріледі?</summary><p>Ас үй гарнитуры мен кіреберіске. Гарнитурға сушилка, кіреберіске сөре қосылады.</p></details>
+<details class="rv"><summary>Жөндеу мерзімінен кешікпей ме?</summary><p>Біз келісімшартпен жұмыс істейміз, объектіні уағдаласқан мерзімде тапсырамыз. Әр кезеңнен кейін есеп береміз.</p></details>
+<details class="rv"><summary>Өлшем мен консультация ақылы ма?</summary><p>Жоқ, тегін. Өтінім қалдырсаңыз немесе WhatsApp-қа жазсаңыз жеткілікті.</p></details>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">ArtLine_kz · Алматы · <a href="https://www.instagram.com/artline_kz_/" target="_blank" rel="noopener">Instagram</a> · <a href="https://wa.me/77066106272" target="_blank" rel="noopener">+7 706 610 6272</a></div>
+</footer>
+
+<a class="wa-fix" href="https://wa.me/77066106272?text=Сәлеметсіз%20бе!" target="_blank" rel="noopener" aria-label="WhatsApp-қа жазу">
+<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3zm0 2.4a10.6 10.6 0 1 1-5.4 19.7l-.4-.2-3.8 1.2 1.2-3.7-.3-.4A10.6 10.6 0 0 1 16 5.4z"/></svg>
+WhatsApp-қа жазу</a>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var fmt=function(n){return Math.round(n).toLocaleString('ru-RU').replace(/,/g,' ')+' тг'};
+// reveal on scroll
+var els=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+ els.forEach(function(el){io.observe(el)});
+}else{els.forEach(function(el){el.classList.add('in')})}
+// timer
+var end=new Date(2026,10,30,23,59,59).getTime();
+function tick(){
+ var d=Math.max(0,end-Date.now()),s=Math.floor(d/1000);
+ $('td').textContent=Math.floor(s/86400);
+ $('th').textContent=Math.floor(s%86400/3600);
+ $('tm').textContent=Math.floor(s%3600/60);
+ $('ts').textContent=s%60;
+}
+tick();setInterval(tick,1000);
+if(end<Date.now()){$('timer').insertAdjacentHTML('afterend','<p class="note"><b>Акция аяқталды.</b> Қазіргі шарттарды WhatsApp арқылы нақтылаңыз.</p>');$('timer').style.display='none'}
+// calculator with smooth number change
+var shown={rRep:0,rDes:0,rFur:0,rTot:0};
+function animate(id,to,text){
+ var el=$(id),from=shown[id],t0=null;
+ if(text){el.textContent=text;shown[id]=to;return}
+ function step(t){
+  if(!t0)t0=t;var p=Math.min(1,(t-t0)/450),v=from+(to-from)*p;
+  el.textContent=fmt(v);
+  if(p<1)requestAnimationFrame(step);else shown[id]=to;
+ }
+ requestAnimationFrame(step);
+}
+function selected(){
+ var n=[];document.querySelectorAll('.fur').forEach(function(c){if(c.checked)n.push(c.dataset.n)});
+ var o=$('own').value.trim();if(o)n.push(o);return n;
+}
+function calc(){
+ var a=parseFloat($('area').value)||0,price=parseFloat($('cls').value);
+ var rep=a*price,sel=selected(),free=sel.length>0;
+ var rate=a<=50?12000:(a<=80?10000:8000),des=a*rate;
+ animate('rRep',rep);
+ if(free){$('rDes').innerHTML='<span class="free">тегін (акция)</span>';shown.rDes=0}else{animate('rDes',des)}
+ $('rFur').textContent=free?'өлшемнен кейін есептеледі':'таңдалмады';
+ var tot=rep+(free?0:des);
+ animate('rTot',tot);
+ var cn=$('cls').options[$('cls').selectedIndex].text.split(' — ')[0];
+ $('fsum').textContent='Сіздің есебіңіз: '+a+' м², '+cn+', жөндеу + дизайн шамамен '+fmt(tot)+(free?'. Жиһаз: '+sel.join(', '):'');
+ $('rNote').textContent=free
+  ?'Жөндеу мен жиһазды бірге тапсырсаңыз, дизайн-жоба тегін ('+fmt(des)+' үнемделеді). Акция 30.11.2026 дейін. Жиһаз бағасын өлшемнен кейін айтамыз.'
+  :'Жиһаз таңдасаңыз және жөндеумен бірге тапсырсаңыз, дизайн-жоба тегін болады.';
+}
+['area','cls'].forEach(function(i){$(i).addEventListener('input',calc)});
+document.querySelectorAll('.fur').forEach(function(c){c.addEventListener('change',calc)});
+$('own').addEventListener('input',calc);
+calc();
+$('fp').addEventListener('input',function(){
+ var d=this.value.replace(/\D/g,'');
+ if(d[0]==='8')d='7'+d.slice(1);
+ if(d&&d[0]!=='7')d='7'+d;
+ d=d.slice(0,11);
+ var o='';
+ if(d.length){o='+7';if(d.length>1)o+=' ('+d.slice(1,4);if(d.length>4)o+=') '+d.slice(4,7);if(d.length>7)o+='-'+d.slice(7,9);if(d.length>9)o+='-'+d.slice(9,11)}
+ this.value=o;
+});
+// form -> Telegram (Cloudflare Worker) -> иесіне; қате болса WhatsApp
+var ENDPOINT='https://artlinekz.akzholzhekei2304.workers.dev'; // <-- осында Worker сілтемесін қойыңыз, мысалы https://artline.ваш-аккаунт.workers.dev
+var WA='https://wa.me/77066106272?text=';
+$('form').addEventListener('submit',function(e){
+ e.preventDefault();
+ var n=$('fn').value.trim(),p=$('fp').value.trim(),ok=$('ok'),btn=this.querySelector('button');
+ ok.style.display='block';
+ if(n.length<2||p.replace(/\D/g,'').length<11){ok.style.background='#fbeaea';ok.style.color='#7a2323';ok.textContent='Аты-жөніңізді және телефон нөміріңізді толық жазыңыз.';return}
+ var sel=selected(),summary=$('fsum').textContent;
+ var msg='Сәлеметсіз бе! Тегін өлшем мен консультацияға өтінім.\nАты: '+n+'\nТелефон: '+p+'\n'+summary;
+ function viaWA(){
+  ok.style.background='#eaf5ec';ok.style.color='#1d5a2e';
+  ok.textContent='Рақмет! WhatsApp ашылады, хабарламаны жіберіңіз.';
+  var u=WA+encodeURIComponent(msg);
+  if(!window.open(u,'_blank'))location.href=u;
+ }
+ if(!ENDPOINT){viaWA();return}
+ btn.disabled=true;btn.textContent='Жіберілуде...';
+ ok.style.background='#eef0f2';ok.style.color='#2B2623';ok.textContent='Өтінім жіберілуде...';
+ fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'text/plain'},body:JSON.stringify({
+  name:n,phone:p,area:$('area').value,cls:$('cls').options[$('cls').selectedIndex].text.split(' — ')[0],
+  summary:summary,furniture:sel.join(', '),website:$('hp').value})})
+ .then(function(r){if(!r.ok)throw 0;
+  ok.style.background='#eaf5ec';ok.style.color='#1d5a2e';
+  ok.textContent='Рақмет! Өтінім қабылданды. Жақын арада WhatsApp немесе қоңырау арқылы байланысамыз.';
+  $('form').reset();calc();btn.textContent='Жіберілді';
+  setTimeout(function(){btn.disabled=false;btn.textContent='Өтінім жіберу'},4000)})
+ .catch(function(){btn.disabled=false;btn.textContent='Өтінім жіберу';viaWA()});
+});
+})();
+</script>
+</body>
+</html>
